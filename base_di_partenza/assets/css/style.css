@@ -14,6 +14,8 @@ header{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    transition: 1s;
 }
 main{
     font-family: "Roboto", sans-serif;
@@ -86,6 +88,7 @@ hero{
     display: flex;
     justify-content: space-between;
     background-color: #ffc017;
+    padding-block-start: 54.09px;
 }
 hero div{
     margin-block: auto;
@@ -334,3 +337,34 @@ aside h3{
 aside div{
     margin-block-end: 2em;
 }
+
+/* SCROLL HEADER */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+/* animazione */
+
+header a{
+    transition: 1s;
+}
+
+    .active{
+        /* transition: 1s; */
+        background-color: white;
+    }
+
+    .color-a-change{
+        background-color: #1a8917;
+    }
+
+    /* header{
+        animation: color-nav 3s;
+    }
+    header a{
+        animation: color-button 3s;
+    } */
