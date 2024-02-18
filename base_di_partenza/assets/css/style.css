@@ -110,7 +110,7 @@ hero img{
 }
 .under-the-fold>div img{
     height: 1.4em;
-    margin-inline-end: 0.5em;
+    /* margin-inline-end: 0.5em; */
 }
 
 /* TRENDING SECTION */
@@ -143,6 +143,7 @@ hero img{
 
 .under-the-fold div{
     column-gap: 1em;
+    
 }
 .under-the-fold > section > div{
     width: 33%;
@@ -177,6 +178,7 @@ margin-inline-end: 0px;
 }
 .second .single-article h2{
     font-size: 1em;
+    width: 26.3rem;
 }
 .second .single-article p{
     font-size: 0.9em;
@@ -189,6 +191,9 @@ span{
     padding: 0.4em;
     border-radius: 13px;
     margin-inline-end: 0.3em;
+}
+.second .single-article div a{
+    margin-inline-start: auto;
 }
 
 .second .single-article{
