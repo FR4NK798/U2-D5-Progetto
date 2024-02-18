@@ -33,6 +33,9 @@ hero div p{
     font-size: 0.6em;
     font-weight: 700;
     letter-spacing: 0.1em;
+
+    position: sticky;
+    top: calc(54.09px + 2rem);
 }
 h5{
     font-weight: 700;
@@ -327,12 +330,22 @@ aside ul{
     border-block-start: solid 1px;
     border-color: #e6e7e7;
     padding-block-start: 1.2em;
+
+    position: sticky;
+    top: 16.3rem;
 }
 aside h3{
     margin-block-end: 1em;
 }
 .second div{
     column-gap: 0px;
+
+
+}
+
+.second aside div{
+    position: sticky;
+    top: 6.56rem;
 }
 aside div{
     margin-block-end: 2em;
@@ -345,6 +358,8 @@ header{
     top: 0;
     right: 0;
     left: 0;
+
+    z-index: 1;
 }
 
 /* animazione */
