@@ -1,4 +1,282 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box
+}
+
+body{
+    color: #191919;
+}
+
+/* FONT  senza grazie*/
+header{
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+hero div p{
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: 300;
+    width: 25rem;
+    margin-block-end: 1.2em;
+}
+.under-the-fold h3{
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+h5{
+    font-weight: 700;
+    font-size: x-large;
+    color: #d5d5d5;
+}
+h4{
+    color: #757575;
+    font-size: 0.8em;
+}
+
+/* FONT  con grazie*/
+hero h1{
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 106px;
+    letter-spacing: -0.4rem;
+
+    margin-block: 0.3rem;
+    font-size: 5.7em;
+}
 /* HEADER */
 header{
+    gap: 0.6rem;
+    padding-inline: 11em;
     background-color: #ffc017;
+    display: flex;
+
+    padding-block: 0.7rem;
+
+    align-items: center;
+}
+header img{
+    height: 1.3rem;
+}
+nav ul li{
+    display: inline-block;
+    margin-inline-end: 0.7rem;
+}
+nav{
+    margin-inline-start: auto;
+    
+}
+/* BORDO HEADER HERO */
+header,hero{
+    border-block-end: solid 1px;
+    border-color: #191919;
+}
+/* HERO */
+hero{
+    padding-inline-start: 8.7em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc017;
+}
+hero div{
+    margin-block: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: baseline;
+}
+hero img{
+    height: 23.5rem;
+}
+/* MARGIN AFTER THE FOLD */
+.under-the-fold{
+    padding-inline: 8.7em;
+    margin-block-start: 2.5em;
+
+}
+.under-the-fold>div{
+    display: flex;
+    margin-block-end: 0.7em;
+    
+}
+.under-the-fold>div img{
+    height: 1.4em;
+    margin-inline-end: 0.5em;
+}
+
+/* TRENDING SECTION */
+/* border radius 1 img */
+
+/* border radius altre img */
+
+.under-the-fold section div:nth-child(1) .single-article img{
+    border-radius: 50%;
+}
+.border-circle{
+    border-radius: 5px;
+}
+.single-article img{
+    height: 1.2em;
+}
+.single-article p{
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.single-article h2{
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.single-article{
+    gap: 0.5em;
+    margin-block-start: 0.2rem;
+}
+
+.under-the-fold div{
+    column-gap: 1em;
+}
+.under-the-fold > section > div{
+    width: 33%;
+}
+.single-article div{
+    gap: 0.5em;
+
+}
+
+.under-the-fold > section{
+    margin-block-end: 2.3em;
+    height: 11.5em;
+    align-content: space-between;
+}
+
+.under-the-fold:nth-of-type(1){
+    border-block-end: solid 1px;
+    border-color: #eceded;
+}
+.single-article h2{
+    margin-block-end: 0.3em;
+}
+
+.star::after{
+    content: url(../imgs/svg/star.svg);
+    vertical-align: sub;
+}
+
+/* FINE 1 UNDER THE FOLD */
+
+.second .single-article img{
+border-radius: 50%;
+height: 1em;
+margin-inline-end: 0px;
+}
+.second .single-article h2{
+    font-size: 1em;
+}
+.second .single-article p{
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #757575;
+}
+
+span{
+    background-color: #f2f3f3;
+    padding: 0.4em;
+    border-radius: 13px;
+    margin-inline-end: 0.3em;
+}
+
+.second .single-article{
+    width: 25em;
+    /* prova */
+    /* width: 50%; */
+}
+
+/* .second section div{
+    align-items: center;
+} */
+.second section div > div + div{
+    width: 21%;
+}
+
+.second section div > div + div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.second .star{
+    margin-inline-end: auto;
+}
+.second .single-article a{
+    font-size: 1.5em;
+}
+.second section div{
+    column-gap: 1.5em;
+    /* margin-block-end: 2.5em; */
+}
+.second section > div{
+    margin-block-end: 2.5em;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+main section div{
+    display: flex;
+}
+/* vale per article trending e article main section */
+.single-article{
+    flex-direction: column;
+}
+
+
+/* ARTICLE AND ASIDE */
+main section + div{
+    display: flex;
+}
+
+main section + div section{
+    display: flex;
+    flex-direction: column;
+}
+.single-article div{
+    align-items: center;
+}
+
+/* ASIDE */
+aside{
+    display: flex;
+    flex-direction: column;
+}
+aside div,aside ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside ul li{
+    display: inline-block;
+}
+/* BOTTONI */
+header a,hero a{
+    background-color: #191919;
+    color: white;
+    text-decoration: none;
+    border-radius: 5rem;
+
+    padding-inline: 1.2em;
+    padding-block: 0.7em;
+}
+
+hero a{
+    padding-inline: 3em;
+    padding-block: 0.5em;
 }
